@@ -10,6 +10,6 @@ class LivreAudio extends Livre {
 
     @Override
     String getInfo() {
-        return titre + " - " + prix + "€ (" + dureeMinutes + " min)";
+        return super.getInfo() + " (" + dureeMinutes + " min)";
     }
 }

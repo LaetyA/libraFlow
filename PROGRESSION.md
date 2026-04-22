@@ -7,3 +7,9 @@
 - Notion apprise : Héritage (extends, super, @Override)
 - Ce que ça fait dans LibraFlow : catalogue unifié de tous les types de livres
 - Package actuel : com.libraflow.catalogue
+## Séance 9 — This & Super
+- Fichier modifié : LivreAudio.java
+- Notion apprise : this (objet courant) / super (partie parente)
+- Ce que ça fait dans LibraFlow : getInfo() délègue à Livre via super.getInfo()
+  au lieu de réécrire titre et prix
+- Dette technique : aucune

@@ -1,0 +1,1 @@
+- [x] Séance 9 — This & Super : hiérarchie getInfo() complète via super
