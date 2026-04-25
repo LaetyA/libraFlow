@@ -13,10 +13,15 @@ public class Main {
         // tableau[0] = l1;
         // tableau[1] = l2;
         // tableau[2] = l3;
-        Livre l1 = new LivreAudio("Dune", 12.0, 480);
-        Livre l2 = new LivreNumerique("Dune", 12.0, "PDF");
-        System.out.println(l1.getInfo());
-        System.out.println(l2.getInfo());
+        LivreAudio[] catalogue = {
+                new LivreAudio("Dune", 15.0, 300, 14),
+                new LivreAudio("1984", 12.0, 240, 7)
+        };
+
+        for (LivreAudio e : catalogue) {
+            System.out.println(e.dureeEmprunt());
+            System.out.println(e.titre);
+        }
         // for (Livre livre : tableau) {
 
         // System.out.println(livre.getInfo());

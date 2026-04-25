@@ -21,3 +21,8 @@
 - Fichiers modifiés : Livre.java, LivreAudio.java, LivreNumerique.java
 - Notion apprise : Abstract Class
 - Ce que ça fait dans LibraFlow : Livre ne peut plus être instanciée directement — chaque type de livre est forcé de définir son propre getDetail()
+## Séance 12 — Interfaces vs Classes abstraites
+- Fichiers créés : Empruntable.java, Achetable.java, LivrePhysique.java
+- Fichiers modifiés : LivreAudio.java, LivreNumerique.java
+- Notion apprise : Interfaces — contrats ciblés par classe
+- Ce que ça fait dans LibraFlow : chaque type de livre signe uniquement le contrat qui le concerne
