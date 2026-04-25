@@ -9,7 +9,7 @@ public class LivreNumerique extends Livre {
     }
 
     @Override
-    String getInfo() {
-        return titre + " - " + prix + "€ (" + format + ")";
+    String getDetail() {
+        return format;
     }
 }

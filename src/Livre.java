@@ -1,6 +1,6 @@
 package LibraFlow.src;
 
-class Livre {
+abstract class Livre {
     String titre;
     double prix;
 
@@ -9,7 +9,9 @@ class Livre {
         this.prix = prix;
     }
 
+    abstract String getDetail();
+
     String getInfo() {
-        return titre + " - " + prix + "€";
+        return titre + " - " + prix + "€ (" + getDetail() + ")";
     }
 }

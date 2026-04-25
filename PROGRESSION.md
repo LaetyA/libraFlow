@@ -17,3 +17,7 @@
 - Fichier créé : Main.java
 - Notion apprise : Polymorphisme
 - Ce que ça fait dans LibraFlow : affichage unifié de tous les types de livres via Livre[]
+## Séance 11 — Abstract Class
+- Fichiers modifiés : Livre.java, LivreAudio.java, LivreNumerique.java
+- Notion apprise : Abstract Class
+- Ce que ça fait dans LibraFlow : Livre ne peut plus être instanciée directement — chaque type de livre est forcé de définir son propre getDetail()

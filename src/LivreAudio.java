@@ -9,7 +9,7 @@ class LivreAudio extends Livre {
     }
 
     @Override
-    String getInfo() {
-        return super.getInfo() + " (" + dureeMinutes + " min)";
+    String getDetail() {
+        return dureeMinutes + "min";
     }
 }
