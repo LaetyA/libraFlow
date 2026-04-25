@@ -1,3 +1,5 @@
 - [x] Séance 9 — This & Super : hiérarchie getInfo() complète via super
 - [x] Séance 10 — Polymorphisme : catalogue unifié Livre[] (Main.java)
 - [x] Séance 11 — Abstract Class : Livre rendue abstraite, getDetail() forcée dans chaque sous-classe (Livre.java, LivreAudio.java, LivreNumerique.java)
+- [x] Séance 12 — Interfaces : contrats Empruntable et Achetable (LivreAudio.java, LivreNumerique.java, LivrePhysique.java)
+- [x] Séance 13 — Annotations : métadonnées Auteur et NePasToucher (Auteur.java, NePasToucher.java)

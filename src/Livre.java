@@ -1,5 +1,6 @@
 package LibraFlow.src;
 
+@Auteur(date = "25 avril 2026", nom = "moi")
 abstract class Livre {
     String titre;
     double prix;
@@ -11,6 +12,7 @@ abstract class Livre {
 
     abstract String getDetail();
 
+    @NePasToucher(interdiction = "ne pas toucher en production")
     String getInfo() {
         return titre + " - " + prix + "€ (" + getDetail() + ")";
     }

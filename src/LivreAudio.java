@@ -12,7 +12,7 @@ class LivreAudio extends Livre implements Empruntable {
 
     @Override
     String getDetail() {
-        return dureeMinutes + "min" + " durée emprunt :" + dureeEmprunt;
+        return dureeMinutes + "min - durée emprunt : " + dureeEmprunt;
     }
 
     @Override

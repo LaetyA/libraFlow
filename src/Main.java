@@ -22,6 +22,8 @@ public class Main {
             System.out.println(e.dureeEmprunt());
             System.out.println(e.titre);
         }
+        Livre l = new LivreNumerique("Dune", 12.0, "PDF");
+        System.out.println(Livre.class.getAnnotation(Auteur.class));
         // for (Livre livre : tableau) {
 
         // System.out.println(livre.getInfo());

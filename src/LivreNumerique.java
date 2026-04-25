@@ -4,6 +4,12 @@ public class LivreNumerique extends Livre implements Achetable {
     String format;
     double prixAchat;
 
+    LivreNumerique(String titre, double prix, String format) {
+        super(titre, prix);
+        this.format = format;
+
+    }
+
     LivreNumerique(String titre, double prix, String format, double prixAchat) {
         super(titre, prix);
         this.format = format;

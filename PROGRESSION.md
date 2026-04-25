@@ -26,3 +26,8 @@
 - Fichiers modifiés : LivreAudio.java, LivreNumerique.java
 - Notion apprise : Interfaces — contrats ciblés par classe
 - Ce que ça fait dans LibraFlow : chaque type de livre signe uniquement le contrat qui le concerne
+## Séance 13 — Annotations
+- Fichiers créés : Auteur.java, NePasToucher.java
+- Fichier modifié : Livre.java
+- Notion apprise : Annotations (@interface, @Retention, méta-annotations)
+- Ce que ça fait dans LibraFlow : traçabilité des auteurs de classes + marquage des méthodes sensibles
