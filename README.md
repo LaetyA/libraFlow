@@ -1,1 +1,2 @@
 - [x] Séance 9 — This & Super : hiérarchie getInfo() complète via super
+- [x] Séance 10 — Polymorphisme : catalogue unifié Livre[] (Main.java)

@@ -13,3 +13,7 @@
 - Ce que ça fait dans LibraFlow : getInfo() délègue à Livre via super.getInfo()
   au lieu de réécrire titre et prix
 - Dette technique : aucune
+## Séance 10 — Polymorphisme
+- Fichier créé : Main.java
+- Notion apprise : Polymorphisme
+- Ce que ça fait dans LibraFlow : affichage unifié de tous les types de livres via Livre[]
