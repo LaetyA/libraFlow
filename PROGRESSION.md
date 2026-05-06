@@ -31,3 +31,8 @@
 - Fichier modifié : Livre.java
 - Notion apprise : Annotations (@interface, @Retention, méta-annotations)
 - Ce que ça fait dans LibraFlow : traçabilité des auteurs de classes + marquage des méthodes sensibles
+## Séance 14 — Generics
+- Fichier créé : Catalogue.java
+- Notion apprise : Generics (paramètre de type, contrainte extends, non-covariance)
+- Ce que ça fait dans LibraFlow : catalogue générique réutilisable, sécurisé à la compilation
+- Dette technique : aucune

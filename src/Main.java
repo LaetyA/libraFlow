@@ -13,21 +13,30 @@ public class Main {
         // tableau[0] = l1;
         // tableau[1] = l2;
         // tableau[2] = l3;
-        LivreAudio[] catalogue = {
-                new LivreAudio("Dune", 15.0, 300, 14),
-                new LivreAudio("1984", 12.0, 240, 7)
-        };
+        // LivreAudio[] catalogue = {
+        // new LivreAudio("Dune", 15.0, 300, 14),
+        // new LivreAudio("1984", 12.0, 240, 7)
+        // };
 
-        for (LivreAudio e : catalogue) {
-            System.out.println(e.dureeEmprunt());
-            System.out.println(e.titre);
-        }
-        Livre l = new LivreNumerique("Dune", 12.0, "PDF");
-        System.out.println(Livre.class.getAnnotation(Auteur.class));
+        // for (LivreAudio e : catalogue) {
+        // System.out.println(e.dureeEmprunt());
+        // System.out.println(e.titre);
+        // }
+        // Livre l = new LivreNumerique("Dune", 12.0, "PDF");
+        // System.out.println(Livre.class.getAnnotation(Auteur.class));
         // for (Livre livre : tableau) {
 
         // System.out.println(livre.getInfo());
         // }
+
+        // Crée un Catalogue<Livre> dans un main, ajoute un Livre, un LivreNumerique, un
+        // LivreAudio, puis affiche-les tous avec getAll() et une boucle.
+       Catalogue<Livre> catalogue = new Catalogue<>();
+catalogue.ajouter(new LivreAudio("Dune", 15.0, 300, 14));
+catalogue.ajouter(new LivreNumerique("1984", 8.0, "PDF"));
+Livre premier = catalogue.get(0);
+System.out.println(premier.getInfo());
+catalogue.afficherTout();
 
     }
 

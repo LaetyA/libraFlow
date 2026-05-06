@@ -3,3 +3,4 @@
 - [x] Séance 11 — Abstract Class : Livre rendue abstraite, getDetail() forcée dans chaque sous-classe (Livre.java, LivreAudio.java, LivreNumerique.java)
 - [x] Séance 12 — Interfaces : contrats Empruntable et Achetable (LivreAudio.java, LivreNumerique.java, LivrePhysique.java)
 - [x] Séance 13 — Annotations : métadonnées Auteur et NePasToucher (Auteur.java, NePasToucher.java)
+- [x] Séance 14 — Generics : classe Catalogue<T extends Livre> générique et type-safe (Catalogue.java)
