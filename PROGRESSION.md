@@ -36,3 +36,8 @@
 - Notion apprise : Generics (paramètre de type, contrainte extends, non-covariance)
 - Ce que ça fait dans LibraFlow : catalogue générique réutilisable, sécurisé à la compilation
 - Dette technique : aucune
+## Séance 15 — Final Keyword
+- Fichiers modifiés : Livre.java, LivreNumerique.java
+- Notion apprise : Final Keyword (champ, méthode, classe)
+- Ce que ça fait dans LibraFlow : titre et prix non modifiables après création, format figé, TVA constante partagée, LivreNumerique non extensible
+- Dette technique : aucune
