@@ -1,8 +1,9 @@
 package LibraFlow.src;
 
-public class LivreNumerique extends Livre implements Achetable {
-    String format;
+final public class LivreNumerique extends Livre implements Achetable {
+   final String format;
     double prixAchat;
+    static final double tva = 5.5; 
 
     LivreNumerique(String titre, double prix, String format) {
         super(titre, prix);
@@ -16,9 +17,13 @@ public class LivreNumerique extends Livre implements Achetable {
         this.prixAchat = prixAchat;
     }
 
+
+
     @Override
     String getDetail() {
-        return format;
+        double ttc = prix*(1+tva/100);
+
+        return "format: "+format+ " ttc = "+ttc;
     }
 
     @Override

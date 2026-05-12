@@ -37,6 +37,9 @@ catalogue.ajouter(new LivreNumerique("1984", 8.0, "PDF"));
 Livre premier = catalogue.get(0);
 System.out.println(premier.getInfo());
 catalogue.afficherTout();
+LivreNumerique l = new LivreNumerique("Dune", 12.99, "PDF");
+
+System.out.println(l.getInfo());
 
     }
 
