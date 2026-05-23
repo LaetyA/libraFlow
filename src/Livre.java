@@ -4,10 +4,12 @@ package LibraFlow.src;
 abstract class Livre {
     final String titre;
     final double prix;
+    TypeLivre type;
 
-    Livre(String titre, double prix) {
+    Livre(String titre, double prix,TypeLivre type) {
         this.titre = titre;
         this.prix = prix;
+        this.type=type;
     }
 
     abstract String getDetail();

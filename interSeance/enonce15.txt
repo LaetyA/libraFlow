@@ -1,0 +1,6 @@
+Exercice inter-séance avant la séance 16 :
+Contexte : LibraFlow a besoin de catégoriser ses livres.
+Ce que tu as déjà : Livre.java, LivreNumerique.java, LivreAudio.java, LivrePhysique.java
+Ce qu'on te demande : imagine comment tu représenterais les catégories de livres — ROMAN, SCIENCE, HISTOIRE, JEUNESSE — sans utiliser de String. Note ta réflexion, même en français, même sans code.
+Ce fichier sera TypeLivre.java — utilisé séance 16.
+Tu n'as pas besoin de tout finir. Note où tu bloques.

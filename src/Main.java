@@ -1,5 +1,8 @@
 package LibraFlow.src;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public static void main(String args[]) {
         // Livre l1 = new LivreAudio("Dune", 12.0, 40);
@@ -31,17 +34,51 @@ public class Main {
 
         // Crée un Catalogue<Livre> dans un main, ajoute un Livre, un LivreNumerique, un
         // LivreAudio, puis affiche-les tous avec getAll() et une boucle.
-       Catalogue<Livre> catalogue = new Catalogue<>();
-catalogue.ajouter(new LivreAudio("Dune", 15.0, 300, 14));
-catalogue.ajouter(new LivreNumerique("1984", 8.0, "PDF"));
-Livre premier = catalogue.get(0);
-System.out.println(premier.getInfo());
-catalogue.afficherTout();
-LivreNumerique l = new LivreNumerique("Dune", 12.99, "PDF");
-
-System.out.println(l.getInfo());
-
+        Catalogue<Livre> catalogue = new Catalogue<>();
+        catalogue.ajouter(new LivreAudio("Dune", 15.0, 300, 14, TypeLivre.ROMAN));
+        catalogue.ajouter(new LivreNumerique("1984", 8.0, "PDF", TypeLivre.HISTOIRE));
+        Livre premier = catalogue.get(0);
+        System.out.println(premier.getInfo());
+        catalogue.afficherTout();
+        LivreNumerique l = new LivreNumerique("Dune", 12.99, "PDF", TypeLivre.JEUNESSE);
+        LivreAudio l1 = new LivreAudio("Casa", 20000, 300, 120, TypeLivre.JEUNESSE);
+        System.out.println(l.getInfo());
+        System.out.println(l1.getInfo());
+       System.out.println(l1.type);
+LivreAudio[] tabLivreAudios = new LivreAudio[4];
+tabLivreAudios[0]=new LivreAudio("aud0", 0, 0, 0, TypeLivre.HISTOIRE);
+tabLivreAudios[1]=new LivreAudio("aud1", 0, 0, 0, TypeLivre.JEUNESSE);
+tabLivreAudios[2]=new LivreAudio("aud2", 0, 0, 0, TypeLivre.JEUNESSE);
+tabLivreAudios[3]=new LivreAudio("aud3", 0, 0, 0, TypeLivre.ROMAN);
+ List<LivreAudio> tabLivreAudioJeunesse =new ArrayList<>();
+for (LivreAudio livreAudio : tabLivreAudios) {
+   
+    if(livreAudio.type == TypeLivre.JEUNESSE){
+         tabLivreAudioJeunesse.add(livreAudio);
     }
+
+}
+for(LivreAudio livreAudio:tabLivreAudioJeunesse){
+    System.out.println(livreAudio.getInfo());
+}
+System.out.println(TypeLivre.JEUNESSE.getLabel());
+
+  Catalogue<Livre> catalogueLivre = new Catalogue<>();
+        catalogueLivre.ajouter(new LivreAudio("Dune", 15.0, 300, 14, TypeLivre.ROMAN));
+        catalogueLivre.ajouter(new LivreNumerique("1984", 8.0, "PDF", TypeLivre.JEUNESSE));
+
+  List<Livre> catalogueLivres = new ArrayList<>();
+  catalogueLivres.add(new LivreAudio("Casa", 20000, 0, 0, TypeLivre.JEUNESSE));
+  catalogueLivres.add(new LivreNumerique("Dune", 10000, null, TypeLivre.ROMAN));
+  catalogueLivres.add(new LivrePhysique("Dasa", 3000, 0, 0, TypeLivre.SCIENCE));
+System.out.println("=== CATALOGUE LIBRAFLOW ===");
+  for (Livre livre : catalogueLivres) {
+    System.out.println(livre.getInfo()+"->"+ livre.type.getLabel());
+  
+  }
+     
+    }
+  
 
     static void afficher(Livre l) {
         System.out.println(l.getInfo());

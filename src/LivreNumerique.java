@@ -5,13 +5,13 @@ public final class LivreNumerique extends Livre implements Achetable {
     double prixAchat;
     static final double TVA = 5.5;
 
-    LivreNumerique(String titre, double prix, String format) {
-        super(titre, prix);
+    LivreNumerique(String titre, double prix, String format,TypeLivre type) {
+        super(titre, prix,type);
         this.format = format;
     }
 
-    LivreNumerique(String titre, double prix, String format, double prixAchat) {
-        super(titre, prix);
+    LivreNumerique(String titre, double prix, String format, double prixAchat,TypeLivre type) {
+        super(titre, prix,type);
         this.format = format;
         this.prixAchat = prixAchat;
     }

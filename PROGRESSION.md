@@ -41,3 +41,9 @@
 - Notion apprise : Final Keyword (champ, méthode, classe)
 - Ce que ça fait dans LibraFlow : titre et prix non modifiables après création, format figé, TVA constante partagée, LivreNumerique non extensible
 - Dette technique : aucune
+## Séance 16 — Enum
+- Fichier créé : TypeLivre.java
+- Fichiers modifiés : Livre.java, LivreAudio.java, LivreNumerique.java, LivrePhysique.java
+- Notion apprise : Enum
+- Ce que ça fait dans LibraFlow : chaque livre a un type catégorisé, filtrable, avec label français
+- Dette technique : aucune

@@ -4,8 +4,8 @@ class LivrePhysique extends Livre implements Empruntable, Achetable {
     int dureeEmprunt;
     double prixAchat;
 
-    LivrePhysique(String titre, double prix, int dureeEmprunt, double prixAchat) {
-        super(titre, prix);
+    LivrePhysique(String titre, double prix, int dureeEmprunt, double prixAchat,TypeLivre type) {
+        super(titre, prix,type);
         this.dureeEmprunt = dureeEmprunt;
         this.prixAchat = prixAchat;
     }
