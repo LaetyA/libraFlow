@@ -6,3 +6,5 @@
 - [x] Séance 14 — Generics : classe Catalogue<T extends Livre> générique et type-safe (Catalogue.java)
 - [x] Séance 15 — Final Keyword : titre, prix, format immuables + TVA constante (Livre.java, LivreNumerique.java)
 - [x] Séance 16 — Enum : catégorisation des livres par type (TypeLivre.java)
+- [x] Séance 17 — Object : toString ,equals et hashCode
+- [x] Séance 18 — Upcasting & Downcasting : méthode afficher() avec dispatch manuel par instanceof (Main.java)

@@ -24,4 +24,21 @@ class LivrePhysique extends Livre implements Empruntable, Achetable {
     public double prixAchat() {
         return prixAchat;
     }
+
+    @Override
+    public boolean equals(Object obj){
+        if(obj ==null)return false;
+        if(!(obj instanceof LivrePhysique)) return false;
+        LivrePhysique livre  = (LivrePhysique)obj;
+        return livre.titre.equals( this.titre) && livre.prix==this.prix;
+    }
+
+    @Override
+    public String toString(){
+        return getDetail();
+    }
+    @Override
+    public int hashCode(){
+        return this.titre.hashCode();
+    }
 }

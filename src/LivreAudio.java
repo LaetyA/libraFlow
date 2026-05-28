@@ -22,8 +22,10 @@ class LivreAudio extends Livre implements Empruntable {
 
     @Override
     public boolean equals(Object obj) {
-        if (obj == null) return false;
-        if (!(obj instanceof LivreAudio)) return false;
+        if (obj == null)
+            return false;
+        if (!(obj instanceof LivreAudio))
+            return false;
         LivreAudio livre = (LivreAudio) obj;
         return livre.titre.equals(this.titre);
     }
@@ -36,5 +38,19 @@ class LivreAudio extends Livre implements Empruntable {
     @Override
     public int hashCode() {
         return this.titre.hashCode();
+    }
+
+    static void afficher(Livre l) {
+        if (l instanceof LivreNumerique) {
+            LivreNumerique livre = (LivreNumerique) l;
+            System.out.println(livre.getInfo() + "format:" + livre.format);
+        } else if (!(l instanceof LivreAudio)) {
+            System.out.println(l.getInfo());
+        }
+
+        else {
+            LivreAudio livre = (LivreAudio) l;
+            System.out.println(livre.getInfo() + livre.dureeMinutes + "min");
+        }
     }
 }

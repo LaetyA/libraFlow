@@ -47,3 +47,10 @@
 - Notion apprise : Enum
 - Ce que ça fait dans LibraFlow : chaque livre a un type catégorisé, filtrable, avec label français
 - Dette technique : aucune
+## Séance 18 — Upcasting & Downcasting
+- Fichier modifié : Main.java
+- Notion apprise : Upcasting & Downcasting
+- Ce que ça fait dans LibraFlow : méthode afficher() qui adapte 
+  l'affichage selon le type réel du livre via instanceof + downcast
+- Tests / trace : trois cas tracés — LivreNumerique, LivreAudio, LivrePhysique
+- Dette technique : aucune
