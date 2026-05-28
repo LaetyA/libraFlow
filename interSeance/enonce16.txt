@@ -1,0 +1,9 @@
+Tu as raison — voici l'exercice inter-séance :
+
+**Contexte** : LibraFlow compare des livres — est-ce que deux `LivreAudio` avec le même titre sont "égaux" ?
+**Ce que tu as déjà** : `Livre.java`, `LivreAudio.java`
+**Ce qu'on te demande** : dans `Main.java`, crée deux `LivreAudio` identiques (même titre, même prix, même type) et teste `==` puis `.equals()` entre les deux. Note ce que tu observes et pourquoi selon toi.
+**Fichier à modifier** : `Main.java`
+**Ce fichier sera utilisé** séance 17 — point de départ sur `Object Class`.
+
+Tu n'as pas besoin de tout comprendre. Note juste ce que tu observes.

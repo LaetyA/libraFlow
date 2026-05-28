@@ -1,0 +1,4 @@
+Contexte : LibraFlow a besoin de comparer des livres dans un catalogue.
+Ce qu'on te demande : dans LivrePhysique.java, overrides les trois méthodes — equals() basé sur le titre ET le prix, toString() qui affiche titre + prix + durée d'emprunt, hashCode() basé sur titre et prix.
+Fichier cible : LivrePhysique.java
+Consigne : tu n'as pas besoin de tout finir. Essaie. Note où tu bloques.
