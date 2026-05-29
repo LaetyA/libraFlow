@@ -80,22 +80,54 @@ public class Main {
     LivreNumerique livreA = new LivreNumerique("Dune", 10000, "PDF", TypeLivre.ROMAN);
     LivreNumerique livreB = new LivreNumerique("Dune", 10000, "PDF", TypeLivre.ROMAN);
     LivreNumerique livreC = new LivreNumerique("Dune3", 10000, "PDF", TypeLivre.ROMAN);
-// System.out.println(livreA.equals(livreB));
-// System.out.println(livreA.equals(livreC));
-// System.out.println(livreA);
-LivreAudio lA1= new LivreAudio("test", 200, 30, 0, TypeLivre.JEUNESSE);
-LivreAudio lA2= new LivreAudio("test", 200, 30, 0, TypeLivre.JEUNESSE);
-System.out.println(lA1.equals(lA2));
-System.out.println(lA1);
+    // System.out.println(livreA.equals(livreB));
+    // System.out.println(livreA.equals(livreC));
+    // System.out.println(livreA);
+    LivreAudio lA1 = new LivreAudio("test", 200, 30, 0, TypeLivre.JEUNESSE);
+    LivreAudio lA2 = new LivreAudio("test", 200, 30, 0, TypeLivre.JEUNESSE);
+    System.out.println(lA1.equals(lA2));
+    System.out.println(lA1);
 
+    // HashSet<LivreNumerique> set = new HashSet<>();
+    // set.add(new LivreNumerique("Dune", 12.0, "PDF", TypeLivre.ROMAN));
+    // set.add(new LivreNumerique("Dune", 12.0, "PDF", TypeLivre.ROMAN));
+    // System.out.println(set.size());
 
-// HashSet<LivreNumerique> set = new HashSet<>();
-// set.add(new LivreNumerique("Dune", 12.0, "PDF", TypeLivre.ROMAN));
-// set.add(new LivreNumerique("Dune", 12.0, "PDF", TypeLivre.ROMAN));
-// System.out.println(set.size());
+ 
+filtre(catalogueLivres,new Filtre() {
+    public boolean filtre(Livre livre) {
+        return livre.prix < 20;
+    }
+});
   }
+
+  public String rapport(Livre l) {
+    if (l instanceof LivrePhysique) {
+      LivrePhysique livre = (LivrePhysique) l;
+      return "livre:" + livre.titre + "prix :" + livre.prixAchat + "durée d'emprunt :" + livre.dureeEmprunt;
+    } else if (l instanceof LivreAudio) {
+      LivreAudio livre = (LivreAudio) l;
+      return "livre:" + livre.titre + "durée minute :" + livre.dureeMinutes;
+
+    } else {
+      return l.getInfo();
+    }
+
+  }
+public List<Livre> filtre(List<Livre> catalogue, Filtre critere){
+  List<Livre>livreFilter = new ArrayList<>();
+  for (Livre livre : catalogue) {
+    if(critere.filtre(livre)){
+     livreFilter.add(livre);
+    }
+
+  }
+  return livreFilter;
+
+ }
 
   static void afficher(Livre l) {
     System.out.println(l.getInfo());
   }
+
 }

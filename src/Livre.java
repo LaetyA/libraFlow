@@ -18,4 +18,6 @@ abstract class Livre {
     final String getInfo() {
         return titre + " - " + prix + "€ (" + getDetail() + ")";
     }
+        
+    
 }

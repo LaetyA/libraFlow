@@ -1,0 +1,4 @@
+Contexte : LibraFlow veut un rapport de catalogue.
+Ce qu'on te demande : dans Main.java, écris une méthode rapport(Livre l) qui — sans modifier les classes existantes — affiche pour un LivrePhysique son prixAchat et sa dureeEmprunt, pour un LivreAudio sa dureeMinutes, pour tout autre livre juste getInfo().
+Fichier cible : Main.java
+Tu n'as pas besoin de tout finir. Essaie. Note où tu bloques.
