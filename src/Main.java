@@ -94,11 +94,6 @@ public class Main {
     // System.out.println(set.size());
 
  
-filtre(catalogueLivres,new Filtre() {
-    public boolean filtre(Livre livre) {
-        return livre.prix < 20;
-    }
-});
   }
 
   public String rapport(Livre l) {
@@ -114,17 +109,7 @@ filtre(catalogueLivres,new Filtre() {
     }
 
   }
-public List<Livre> filtre(List<Livre> catalogue, Filtre critere){
-  List<Livre>livreFilter = new ArrayList<>();
-  for (Livre livre : catalogue) {
-    if(critere.filtre(livre)){
-     livreFilter.add(livre);
-    }
 
-  }
-  return livreFilter;
-
- }
 
   static void afficher(Livre l) {
     System.out.println(l.getInfo());
