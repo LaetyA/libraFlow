@@ -54,3 +54,11 @@
   l'affichage selon le type réel du livre via instanceof + downcast
 - Tests / trace : trois cas tracés — LivreNumerique, LivreAudio, LivrePhysique
 - Dette technique : aucune
+## Séance 19 — Inner Class & Anonymous Inner Class
+- Fichier créé : Filtre.java
+- Fichier modifié : Main.java (filtrer() rendue static + classe anonyme romansSeulement)
+- Notion apprise : Classe anonyme — créer objet + comportement à la volée pour implémenter une interface
+- Ce que ça fait dans LibraFlow : filtrage du catalogue par critère passé en paramètre
+- Tests / trace : exécuté — filtrer(catalogue, romansSeulement) → "Dune (ROMAN)" (prédiction confirmée)
+- Transfert : RH — FiltreCandidat (expérience > 3 ans) réussi
+- Dette technique : filtrer() vit dans Main (responsabilité à revoir) ; classe interne NOMMÉE non construite (inter-séance)

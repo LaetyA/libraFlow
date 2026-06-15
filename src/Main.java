@@ -93,8 +93,13 @@ public class Main {
     // set.add(new LivreNumerique("Dune", 12.0, "PDF", TypeLivre.ROMAN));
     // System.out.println(set.size());
 
- 
-  }
+  Filtre romansSeulement =new Filtre() {
+    public boolean garder(Livre livre){
+       return livre.type==TypeLivre.ROMAN ;
+    }
+  };
+  filtrer(catalogueLivres ,romansSeulement);
+}
 
   public String rapport(Livre l) {
     if (l instanceof LivrePhysique) {
@@ -110,9 +115,21 @@ public class Main {
 
   }
 
+  
+  public static List<Livre>filtrer(List<Livre> livres ,Filtre critere){
+    List<Livre> resultats = new ArrayList<>();
+  for (Livre livre : livres) {
+    if (critere.garder(livre)) {
+      resultats.add(livre);
+    }
+  }
+    return resultats;
+  }
 
   static void afficher(Livre l) {
     System.out.println(l.getInfo());
   }
+
+  
 
 }

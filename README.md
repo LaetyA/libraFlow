@@ -8,3 +8,4 @@
 - [x] Séance 16 — Enum : catégorisation des livres par type (TypeLivre.java)
 - [x] Séance 17 — Object : toString ,equals et hashCode
 - [x] Séance 18 — Upcasting & Downcasting : méthode afficher() avec dispatch manuel par instanceof (Main.java)
+- [x] Séance 19 — Inner Class : interface Filtre + filtrer() + classe anonyme romansSeulement (Filtre.java, Main.java). Classe interne nommée : à faire (inter-séance).

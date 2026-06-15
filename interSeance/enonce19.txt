@@ -1,0 +1,6 @@
+Contexte : ta classe anonyme romansSeulement marche. Mais parfois on veut un filtre réutilisable, nommé.
+Ce qu'on te demande : dans Main.java, écris une vraie classe NOMMÉE FiltrePrix qui implements Filtre
+                      (garder = prix < 10). Instancie-la, passe-la à filtrer. Puis note en une ligne :
+                      qu'est-ce que tu gagnes / perds par rapport à la classe anonyme ?
+Fichier cible : Main.java (+ FiltrePrix, classe ou fichier au choix)
+Tu n'as pas besoin de tout finir. Essaie. Note où tu bloques.
