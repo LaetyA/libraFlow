@@ -99,6 +99,9 @@ public class Main {
     }
   };
   filtrer(catalogueLivres ,romansSeulement);
+FiltrePrix prixLivre = new FiltrePrix();
+
+  filtrer(catalogueLivres, prixLivre);
 }
 
   public String rapport(Livre l) {
@@ -129,7 +132,13 @@ public class Main {
   static void afficher(Livre l) {
     System.out.println(l.getInfo());
   }
-
   
 
+}
+
+class FiltrePrix implements Filtre{
+@Override
+public boolean garder(Livre livre) {
+    
+    return livre.prix<10;}
 }
